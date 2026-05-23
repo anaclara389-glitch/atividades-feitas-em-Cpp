@@ -1,0 +1,42 @@
+//Monitoramento de Velocidade de Veículo
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+   char nome_motorista [20];
+   int velocidade_p, velocidade_v;
+   float excesso = velocidade_v - velocidade_p;
+   
+   cout << "Digite o nome do motorista: ";
+   cin >> nome_motorista;
+   
+   cout << "Digite a velocidade permitida na pista: ";
+   cin >> velocidade_p;
+   
+   cout << "Digite a velocidade do veículo: ";
+   cin >> velocidade_v;
+   
+   
+   if(velocidade_v <= velocidade_p) {
+       cout << "DENTRO DO LIMITE" << endl;
+   }
+   
+   else if (velocidade_v <= velocidade_p +10) {
+       cout << "Excesso de velocidade" << endl;
+       cout << "MULTA LEVE" << endl;
+   }
+   
+   else if (velocidade_v >= velocidade_p +11 and velocidade_v <= velocidade_p+20) {
+       cout << "Excesso de velocidade" << endl;
+       cout << "MULTA GRAVE" << endl;
+   }
+   else if (velocidade_v >= velocidade_p +20){
+       cout << "Excesso de velocidade" << endl;
+       cout << "MULTA GRAVÍSSIMA" << endl;
+   }
+   
+   return 0;
+}

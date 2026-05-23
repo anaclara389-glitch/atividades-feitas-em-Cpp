@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float num1, num2;
+    char operador;
+    
+    while(true){
+        cout << "Calculadora simples" << endl;
+        cout << "Digite o primeiro número: " << endl;
+        cin >> num1;
+        cout << "Digite o segundo número: " << endl;
+        cin >> num2;
+        cout << "Digite o operador (+, -, *): " << endl;
+        cin >> operador;
+    
+        
+        if(operador == '+') { 
+            cout << num1 + num2 << endl;
+             
+        }
+            
+        else if (operador == '-'){ 
+            cout << num1 - num2 << endl;
+             
+        }
+        
+        else if(operador == '*'){
+            cout << num1 * num2 << endl;
+             
+        }
+        
+        else {break;}
+        
+    };
+    
+    
+    return 0;
+}
